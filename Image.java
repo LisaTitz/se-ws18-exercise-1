@@ -1,3 +1,6 @@
+// Assignment01 done by Thao Nguyen and Lisa Titz
+
+
 import java.io.*;
 
 public class Image {
