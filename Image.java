@@ -20,8 +20,8 @@ public class Image {
 		}
 		else {
 			data[(x*width+y)*3] 	= (byte) (val >> 16);  //shift to the right (where red is decoded)
-			data[x*width+y)*3+ 1] 	= (byte) (val >> 8);	// position of pixel decoding for green
-			data[x*width+y)*3 2] 	= (byte) (val);			// position of pixel decoding for blue
+			data[(x*width+y)*3 + 1] 	= (byte) (val >> 8);	// position of pixel decoding for green
+			data[(x*width+y)*3 + 2] 	= (byte) (val);			// position of pixel decoding for blue
 		}
 		return data;
 	}
@@ -38,7 +38,7 @@ public class Image {
 			printWriter.println(255);
 			for (int i = 0; i < height*width*3; i++) {  // while going to the array
 				printWriter.println(data[i] + " ");  // writing each data element to the ppm file
-				}
+				
 			}
 			printWriter.close();
 		}
